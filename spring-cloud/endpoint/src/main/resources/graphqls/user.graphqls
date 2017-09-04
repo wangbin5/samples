@@ -1,0 +1,16 @@
+schema {
+    query: QueryType
+}
+type  User{
+    id: Int
+    age: Int
+    sex: Int
+    name: String
+    pic: String
+}
+
+type QueryType {
+    users(page: Int,size:Int,name: String): [User]
+    user(id : Int) : User
+}
+
