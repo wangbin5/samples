@@ -27,6 +27,6 @@ public class HystrixCommandConfigSample extends HystrixCommand {
 
     @Override
     protected Object run() throws Exception {
-        return null;
+        return "";
     }
 }

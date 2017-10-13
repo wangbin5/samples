@@ -9,7 +9,7 @@ import com.netflix.hystrix.HystrixCommandGroupKey;
 
 public class MyHystrixCommand extends HystrixCommand<String> {
     //提供组名
-    protected MyHystrixCommand() {
+    public MyHystrixCommand() {
         super(HystrixCommandGroupKey.Factory.asKey("ExampleGroup"));
     }
 
