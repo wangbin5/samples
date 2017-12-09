@@ -1,5 +1,6 @@
 package study.cloud.endpoint;
 
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -18,7 +19,9 @@ import java.util.Random;
 
 @RestController
 public class Controller {
-    private final Logger logger = Logger.getLogger(getClass());
+
+    private final Logger logger = Logger.getLogger(Controller.class.getName());
+
 
     @Autowired
     private DiscoveryClient client;
@@ -32,7 +35,7 @@ public class Controller {
         }
         ServiceInstance instance = client.getLocalServiceInstance();
         String message  = "/hello,host:"+instance.getHost()+",service_id : "+instance.getServiceId()+",port: "+instance.getPort();
-        logger.info(message);
+        logger.log(Level.INFO, "you called home");
         Hello hello = new Hello();
         hello.setId(id);
         hello.setMessage(message);
@@ -52,5 +55,11 @@ public class Controller {
             items.add(hello);
         }
         return items;
+    }
+
+    @RequestMapping("/hello3")
+    public String hello3(@RequestParam("id") String id){
+        logger.info("hello");
+        return "hello "+id;
     }
 }
