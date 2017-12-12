@@ -48,6 +48,18 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>io.zipkin.brave</groupId>
+			<artifactId>brave-mysql</artifactId>
+			<version>3.9.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.zipkin.java</groupId>
+			<artifactId>zipkin-autoconfigure-storage-mysql</artifactId>
+			<optional>true</optional>
+		</dependency>
+
 	</dependencies>
 
 	<dependencyManagement>
