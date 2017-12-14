@@ -4,11 +4,13 @@ import com.github.kristofa.brave.Brave;
 import com.github.kristofa.brave.mysql.MySQLStatementInterceptorManagementBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.sleuth.zipkin.stream.EnableZipkinStreamServer;
 import org.springframework.context.annotation.Bean;
 import zipkin.server.EnableZipkinServer;
 
 @SpringBootApplication
 @EnableZipkinServer
+@EnableZipkinStreamServer
 public class ZipkinApplication {
 
 	public static void main(String[] args) {
