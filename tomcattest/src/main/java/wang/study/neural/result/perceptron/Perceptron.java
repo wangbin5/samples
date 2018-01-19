@@ -2,6 +2,8 @@ package wang.study.neural.result.perceptron;
 
 import wang.study.neural.result.NeuralNetConfig;
 import wang.study.neural.result.activate.ActivateFunction;
+import wang.study.neural.result.activate.HardLimitingFunction;
+import wang.study.neural.result.activate.SigmoidFunction;
 import wang.study.neural.result.model.Neural;
 
 /**
@@ -16,11 +18,8 @@ public class Perceptron {
     /**
      * 结果要求
      */
-    private NeuralNetConfig neuralNetConfig;
-    /**
-     * 激活函数
-     */
-    private ActivateFunction activateFunction;
+    private NeuralNetConfig config;
+
 
 
     /**
@@ -31,9 +30,9 @@ public class Perceptron {
      */
     public boolean train(double[] input,double expect){
         double netValue = this.neural.calculate(input);
-        double result = this.activateFunction.activation(netValue);
-        double error = result - expect;
-        if(Math.abs(error) > neuralNetConfig.getMaxEpochs()){
+        double result = this.config.getActivateFunction().activation(netValue);
+        double error =  result - expect;
+        if(Math.abs(error) > config.getTargetError()){
             this.learn(input,netValue,error);
             return false;
         }
@@ -41,7 +40,8 @@ public class Perceptron {
     }
     public void learn(double[] input, double netValue,double error) {
         for(int i=0;i<input.length;i++){
-            double wi = neuralNetConfig.getGrowthRate() * error * input[i] * this.activateFunction.derivative(netValue);
+            double value = input[i];
+            double wi = config.getGrowthRate() * error * value * this.config.getActivateFunction().derivative(netValue);
             neural.addWeight(i,wi);
         }
     }
@@ -52,7 +52,7 @@ public class Perceptron {
      */
     public double prediction(double[] input) {
         double netValue = this.neural.calculate(input);
-        double result = this.activateFunction.activation(netValue);
+        double result = this.config.getActivateFunction().activation(netValue);
         return result;
     }
 
@@ -61,7 +61,7 @@ public class Perceptron {
      * @param neuralNetConfig
      */
     public void reset(NeuralNetConfig neuralNetConfig,int length) {
-        this.neuralNetConfig = neuralNetConfig;
+        this.config = neuralNetConfig;
         this.neural = new Neural(length);
     }
 }

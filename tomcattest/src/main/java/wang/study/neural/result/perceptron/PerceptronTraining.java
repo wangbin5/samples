@@ -19,19 +19,24 @@ public class PerceptronTraining {
      */
     public void train(DataSet trainingSet){
         //重置之前训练的结果
-        perceptron.reset(neuralNetConfig,trainingSet.getCols());
+        perceptron.reset(neuralNetConfig,trainingSet.getCols()-1);
         int epoch =0;
         double error = Double.MAX_VALUE;
         //神经网络停止条件
         while(epoch < neuralNetConfig.getMaxEpochs()){
+            boolean stop = true;
             for (int i = 0; i < trainingSet.getRows(); i++) {
                 double[] input = trainingSet.getInputData(i);
                 double realResult = trainingSet.getOutputData(i);
-                boolean stop = perceptron.train(input,realResult);
-                if(stop){
-                    break;
+                boolean shouldStop = perceptron.train(input,realResult);
+                if(!shouldStop){
+                    stop = false;
                 }
             }
+            if(stop){
+                break;
+            }
+
             epoch++;
         }
     }
@@ -63,4 +68,11 @@ public class PerceptronTraining {
         return this.perceptron.prediction(input);
     }
 
+    public NeuralNetConfig getNeuralNetConfig() {
+        return neuralNetConfig;
+    }
+
+    public void setNeuralNetConfig(NeuralNetConfig neuralNetConfig) {
+        this.neuralNetConfig = neuralNetConfig;
+    }
 }

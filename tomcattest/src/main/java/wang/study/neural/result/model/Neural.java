@@ -7,8 +7,8 @@ public class Neural {
     private double[] weight;
 
     public Neural(int length) {
-        this.weight = new double[length];
-        for(int i=0;i<length;i++){
+        this.weight = new double[length+1];
+        for(int i=0;i<this.weight.length;i++){
             this.weight[i] = 0.5;
         }
     }
@@ -30,6 +30,6 @@ public class Neural {
     }
 
     public void addWeight(int i, double wi) {
-        this.weight[i]+=wi;
+        this.weight[i]-=wi;
     }
 }
