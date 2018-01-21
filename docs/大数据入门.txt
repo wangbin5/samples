@@ -1,0 +1,37 @@
+大数据的4V特性
+  Volume：体量巨大
+  Variety：数据类型繁多
+  Value：价值密度低
+  Velocity：处理速度快
+大数据处理流程
+  数据采集
+    flume
+    kafka 
+    sqoop     
+  数据存储
+    HDFS
+    HBase
+    Ceph
+  数据分析&挖掘
+    Hive
+    Mahout
+    RHadoop
+  结果可视化：
+    D3.js
+    R
+    
+大数据通用处理平台-Hadoop
+  核心概念
+  运行逻辑
+大数据通用处理平台-Spark
+  核心概念
+  运行逻辑
+大数据通用处理平台-Storm
+  核心概念
+  运行逻辑
+分布式存储介绍
+  
+大数据常用算法介绍
+
+学习路线图
+

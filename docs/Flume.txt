@@ -1,0 +1,104 @@
+Flume是一个分布式、可靠、和高可用的海量日志聚合的系统
+Source：数据源
+Channel：管道。数据流通和存储的通道
+Sink：用来接收channel传输的数据并将之传送到指定的地方。
+
+kafka:
+Kafka是Linkedin于2010年12月份开源的消息系统，它主要用于处理活跃的流式数据
+生产者: producer 
+消费者: consumer 
+主题  : topic 
+
+sqoop:
+Sqoop 是 apache 下用于 RDBMS 和 HDFS 互相导数据的工具
+
+HDFS：
+分布式文件系统，提供高吞吐量的应用程序数据访问
+元数据节点（NameNode）
+数据节点（DataNode）
+
+HBase:
+是Apache Hadoop的数据库，能够对大型数据提供随机、实时的读写访问，是Google的BigTable的开源实现
+
+Ceph:
+分布式的存储系统,一套存储系统同时提供对象存储、块存储和文件系统存储三种功能
+检查集群的健康情况和状态
+
+Hive:
+Hive是基于Hadoop的一个数据仓库工具，可以将结构化的数据文件映射为一张数据库表，并提供类SQL查询功能
+MapReduce程序。
+
+Mahout:
+基于hadoop实现,提供一些可扩展的机器学习领域经典算法
+分类算法
+聚类算法
+关联规则挖掘
+降维/维约简
+进化算法
+推荐/协同过滤
+向量相似度计算
+
+RHadoop
+RHadoop是一款Hadoop和R语言的结合的产品，由RevolutionAnalytics公司开发，并将代码开源到github社区上面。RHadoop包含三个R包 (rmr，rhdfs，rhbase)，分别是对应Hadoop系统架构中的，MapReduce, HDFS, HBase 三个部分。
+
+R语言，一种自由软件编程语言与操作环境，主要用于统计分析、绘图、数据挖掘。
+R内建多种统计学及数字分析功能。
+R的另一强项是绘图功能，制图具有印刷的素质，也可加入数学符号。
+
+D3.js
+D3.js 是操作基于数据文件的JavaScript库。它使用HTML、SVG和CSS让你的数据基情四射。
+
+Hadoop:
+MapReduce是Hadoop的主要执行框架，它是一个用于分布式并行数据处理的编程模型，将作业分为mapping阶段和reduce阶段。
+YARN: 
+1 client 提交 job,首先找 ResourceManager(ApplicationsManager)分配资源,同时将 jar 包默认拷贝10 份到 hdfs。
+2 ResourceManager 指 定 一 个 NodeManager 开 启 一 个 container , 在 Container 中 运 行 一 个ApplicationMaster 来管理这个应用程序。
+3 ApplicationMaster 会计算此个应用所需资源,向 ResourceManager(ResourceScheduler)申请资源。
+4 ResourceManager 会分配资源,在 NodeManager 上开启不同的 container,在 container 中来运行 map任务或者 reduce 任务
+5 当所有的 task 都执行完了,ApplicationMaster 会将结果反馈给客户端,所有工作执行完成之后,ApplicationMaster 就会自行关闭。
+6 如果某个 map 任务或者 reduce 任务失败,ApplicationMaster 会重新申请新的 container 来执行这个task。
+ 
+
+Map-reduce的思想就是"分而治之"
+Mapper负责"分"，即把复杂的任务分解为若干个"简单的任务"执行
+Reducer对map阶段的结果进行汇总。
+是典型的批处理系统
+
+
+大数据算法：
+分类算法
+聚类算法
+关联规则挖掘
+降维/维约简
+进化算法
+推荐/协同过滤
+向量相似度计算
+
+ Spark数据存储的核心是弹性分布式数据集（RDD）
+Spark计算模型-RDD介绍
+ 
+1、从Hadoop文件系统（或与Hadoop兼容的其他持久化存储系统，如Hive、Cassandra、HBase）输入（如HDFS）创建。
+2、从父RDD转换得到新的RDD。
+3、调用SparkContext()方法的parallelize，将Driver上的数据集并行化，转化为分布式的RDD。
+4、更改RDD的持久性（persistence），例如cache()函数。默认RDD计算后会在内存中清除。通过cache()函数将计算后的RDD缓存在内存中。
+        
+ 1、Transformation（变化）算子-延迟计算
+ 2、Action（行动）算子-立刻计算
+
+Storm是一个分布式的、容错的实时计算系统
+Storm保证每个消息都会得到处理，而且它很快——在一个小集群中，每秒可以处理数以百万计的消息。
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
