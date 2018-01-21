@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="Z:/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar!/org/apache/commons/io/IOUtils.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study/chapter3_1.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study/chapter4_1.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study/chapter_3.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study/chapter_4_2.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study/chapter_5_1.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study/chapter_5_3.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study/chapter_6-2.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-edu-base/src/main/java/com/nd/esp/edu/base/excel/template/ColumnConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-edu-base/src/main/java/com/nd/esp/edu/base/excel/template/ColumnTemplateExport.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-edu-base/src/main/java/com/nd/esp/edu/base/excel/template/ColumnType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-edu-base/src/main/java/com/nd/esp/edu/base/metadata/table/TableWriter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-edu-base/src/main/java/com/nd/esp/edu/statistics/TableMapping.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-edu-base/src/test/java/com/nd/esp/edu/base/metadata/table/ReadCommentFromSource.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-2016/src/main/java/com/nd/esp/statistics/core/entity/Xx.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-2016/src/test/java/ParseField.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/px/entity/PxBm.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/px/entity/PxBmry.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/px/entity/PxFbfw.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/px/entity/PxJd.java">
+          <value>
+            <set>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S9jJsjIJWKibra6" />
+                <option name="message" value="22 more comment lines need to be written to reach the minimum threshold of 25.0% comment density." />
+                <option name="ruleKey" value="common-java:InsufficientCommentDensity" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S9kJsjIJWKibra9" />
+                <option name="line" value="17" />
+                <option name="message" value="Make this line start at column 3." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S9kJsjIJWKibra7" />
+                <option name="message" value="1 duplicated blocks of code must be removed." />
+                <option name="ruleKey" value="common-java:DuplicatedBlocks" />
+                <option name="severity" value="MAJOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S9xJsjIJWKibrb7" />
+                <option name="line" value="11" />
+                <option name="message" value="Class should define a constructor." />
+                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/px/entity/PxLxr.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/px/entity/PxRcap.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/px/entity/PxXm.java">
+          <value>
+            <set>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_ZJsjIJWKibri8" />
+                <option name="line" value="17" />
+                <option name="message" value="Class should define a constructor." />
+                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_AJsjIJWKibrhC" />
+                <option name="line" value="9" />
+                <option name="message" value="Explicitly import the specific classes needed." />
+                <option name="ruleKey" value="squid:S2208" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_YJsjIJWKibri6" />
+                <option name="line" value="9" />
+                <option name="message" value="Wrong order for 'javax.persistence.*' import." />
+                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_EJsjIJWKibrhS" />
+                <option name="line" value="1" />
+                <option name="message" value="Possible God class (WMC=84, ATFD=16, TCC=0.02332469455757127)" />
+                <option name="ruleKey" value="pmd:GodClass" />
+                <option name="severity" value="MAJOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S-qJsjIJWKibrfV" />
+                <option name="message" value="62 more comment lines need to be written to reach the minimum threshold of 25.0% comment density." />
+                <option name="ruleKey" value="common-java:InsufficientCommentDensity" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S-qJsjIJWKibrfW" />
+                <option name="message" value="3 duplicated blocks of code must be removed." />
+                <option name="ruleKey" value="common-java:DuplicatedBlocks" />
+                <option name="severity" value="MAJOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_ZJsjIJWKibri7" />
+                <option name="line" value="10" />
+                <option name="message" value="Wrong order for 'java.text.SimpleDateFormat' import." />
+                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/px/entity/PxXmspjl.java">
+          <value>
+            <set>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_sJsjIJWKibrkO" />
+                <option name="line" value="47" />
+                <option name="message" value="Make this line start at column 5." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_sJsjIJWKibrkM" />
+                <option name="line" value="39" />
+                <option name="message" value="Make this line start at column 5." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_vJsjIJWKibrkb" />
+                <option name="line" value="12" />
+                <option name="message" value="Class should define a constructor." />
+                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_rJsjIJWKibrkJ" />
+                <option name="line" value="20" />
+                <option name="message" value="Make this line start at column 3." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_sJsjIJWKibrkP" />
+                <option name="line" value="51" />
+                <option name="message" value="Make this line start at column 5." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_tJsjIJWKibrkR" />
+                <option name="line" value="59" />
+                <option name="message" value="Make this line start at column 5." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_sJsjIJWKibrkQ" />
+                <option name="line" value="55" />
+                <option name="message" value="Make this line start at column 5." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_qJsjIJWKibrkH" />
+                <option name="message" value="1 duplicated blocks of code must be removed." />
+                <option name="ruleKey" value="common-java:DuplicatedBlocks" />
+                <option name="severity" value="MAJOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_sJsjIJWKibrkN" />
+                <option name="line" value="43" />
+                <option name="message" value="Make this line start at column 5." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_qJsjIJWKibrkG" />
+                <option name="message" value="8 more comment lines need to be written to reach the minimum threshold of 25.0% comment density." />
+                <option name="ruleKey" value="common-java:InsufficientCommentDensity" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/px/entity/Pxbmhz.java">
+          <value>
+            <set>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_0JsjIJWKibrkm" />
+                <option name="line" value="19" />
+                <option name="message" value="Make this line start at column 3." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_8JsjIJWKibrlL" />
+                <option name="line" value="19" />
+                <option name="message" value="fieldCommentRequirement Required" />
+                <option name="ruleKey" value="pmd:CommentRequired" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_9JsjIJWKibrlQ" />
+                <option name="line" value="25" />
+                <option name="message" value="fieldCommentRequirement Required" />
+                <option name="ruleKey" value="pmd:CommentRequired" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_8JsjIJWKibrlN" />
+                <option name="line" value="22" />
+                <option name="message" value="fieldCommentRequirement Required" />
+                <option name="ruleKey" value="pmd:CommentRequired" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_8JsjIJWKibrlM" />
+                <option name="line" value="21" />
+                <option name="message" value="fieldCommentRequirement Required" />
+                <option name="ruleKey" value="pmd:CommentRequired" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_0JsjIJWKibrkk" />
+                <option name="message" value="27 more comment lines need to be written to reach the minimum threshold of 25.0% comment density." />
+                <option name="ruleKey" value="common-java:InsufficientCommentDensity" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_8JsjIJWKibrlO" />
+                <option name="line" value="23" />
+                <option name="message" value="fieldCommentRequirement Required" />
+                <option name="ruleKey" value="pmd:CommentRequired" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_8JsjIJWKibrlP" />
+                <option name="line" value="24" />
+                <option name="message" value="fieldCommentRequirement Required" />
+                <option name="ruleKey" value="pmd:CommentRequired" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4TAGJsjIJWKibrl-" />
+                <option name="line" value="13" />
+                <option name="message" value="Class should define a constructor." />
+                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
