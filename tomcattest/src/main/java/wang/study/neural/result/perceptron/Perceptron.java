@@ -1,10 +1,7 @@
 package wang.study.neural.result.perceptron;
 
 import wang.study.neural.result.NeuralNetConfig;
-import wang.study.neural.result.activate.ActivateFunction;
-import wang.study.neural.result.activate.HardLimitingFunction;
-import wang.study.neural.result.activate.SigmoidFunction;
-import wang.study.neural.result.model.Neural;
+import wang.study.neural.result.model.Neuron;
 
 /**
  * 感知机
@@ -13,7 +10,7 @@ public class Perceptron {
     /**
      * 神经元
      */
-    private Neural neural;
+    private Neuron neuron;
 
     /**
      * 结果要求
@@ -29,7 +26,7 @@ public class Perceptron {
      * @return 返回是否需要停止训练
      */
     public boolean train(double[] input,double expect){
-        double netValue = this.neural.calculate(input);
+        double netValue = this.neuron.calculate(input);
         double result = this.config.getActivateFunction().activation(netValue);
         double error =  result - expect;
         if(Math.abs(error) > config.getTargetError()){
@@ -42,7 +39,7 @@ public class Perceptron {
         for(int i=0;i<input.length;i++){
             double value = input[i];
             double wi = config.getGrowthRate() * error * value * this.config.getActivateFunction().derivative(netValue);
-            neural.addWeight(i,wi);
+            neuron.addWeight(i,wi);
         }
     }
     /**
@@ -51,7 +48,7 @@ public class Perceptron {
      * @return
      */
     public double prediction(double[] input) {
-        double netValue = this.neural.calculate(input);
+        double netValue = this.neuron.calculate(input);
         double result = this.config.getActivateFunction().activation(netValue);
         return result;
     }
@@ -62,6 +59,6 @@ public class Perceptron {
      */
     public void reset(NeuralNetConfig neuralNetConfig,int length) {
         this.config = neuralNetConfig;
-        this.neural = new Neural(length);
+        this.neuron = new Neuron(length);
     }
 }

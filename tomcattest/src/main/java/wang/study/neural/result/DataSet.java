@@ -5,9 +5,9 @@ package wang.study.neural.result;
  */
 public class DataSet {
     private double[][] input;
-    private double[] output;
+    private double[][] output;
 
-    public DataSet(double[][] input, double[] output) {
+    public DataSet(double[][] input, double[][] output) {
         this.input = input;
         this.output = output;
     }
@@ -20,11 +20,11 @@ public class DataSet {
         this.input = input;
     }
 
-    public double[] getOutput() {
+    public double[][] getOutput() {
         return output;
     }
 
-    public void setOutput(double[] output) {
+    public void setOutput(double[][] output) {
         this.output = output;
     }
 
@@ -38,7 +38,11 @@ public class DataSet {
         return this.input[i];
     }
 
-    public double getOutputData(int i) {
+    public double getSingleOutputData(int i) {
+        return this.output[i][0];
+    }
+
+    public double[] getOutputData(int i) {
         return this.output[i];
     }
 }

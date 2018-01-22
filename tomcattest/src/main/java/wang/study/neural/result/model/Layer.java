@@ -7,13 +7,13 @@ import java.util.List;
  * 层
  */
 public class Layer {
-    private List<Neural> items = new ArrayList<>();
+    private List<Neuron> items = new ArrayList<>();
 
-    public List<Neural> getItems() {
+    public List<Neuron> getItems() {
         return items;
     }
 
-    public void setItems(List<Neural> items) {
+    public void setItems(List<Neuron> items) {
         this.items = items;
     }
 
@@ -21,8 +21,8 @@ public class Layer {
     public double[] calculate(double[] input) {
         double[] result = new double[items.size()];
         for(int i=0;i<result.length;i++){
-            Neural neural = items.get(i);
-            result[i] = neural.calculate(input);
+            Neuron neuron = items.get(i);
+            result[i] = neuron.calculate(input);
         }
         return result;
     }

@@ -6,11 +6,16 @@ package wang.study.neural.result.activate;
 public class SigmoidFunction implements ActivateFunction{
     @Override
     public double activation(double value) {
-        return 1.0/(1+Math.exp(-1.0*value));
+        double result  = 1.0/(1+Math.exp(-1.0*value));
+        if(Double.isNaN(result)){
+            return 0.0;
+        }
+        return result;
+
     }
 
     @Override
-    public double derivative(double value) {
-        return -1*(1+Math.exp(-1.0*value));
+    public double derivative(double v) {
+        return (v * (1.0 - v));
     }
 }

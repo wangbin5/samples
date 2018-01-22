@@ -25,8 +25,7 @@ public abstract class Layer {
 	public void setNumberOfNeuronsInLayer(int numberOfNeuronsInLayer) {
 		this.numberOfNeuronsInLayer = numberOfNeuronsInLayer;
 	}
-	
-	
-	
-	
+
+
+
 }
