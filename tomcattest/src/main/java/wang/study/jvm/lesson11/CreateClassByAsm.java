@@ -69,7 +69,6 @@ public class CreateClassByAsm {
         Class clazz = new MyClassLoader(this.getClass().getClassLoader()).defineClass("wang.study.jvm.lesson11.Test",data);
         Method m = clazz.getMethod("run");
         m.invoke(clazz.newInstance());
-
         this.run();
 
 

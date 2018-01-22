@@ -1,0 +1,91 @@
+@startuml
+left to bottom direction
+
+
+class WebUser{
+	login_id: String {id}
+	password:String
+	state: UserState
+	
+}
+class Customer{
+	id: String {id}
+	address:Address
+	phone:Phone
+	email:String
+}
+WebUser "0..1" - "1" Customer
+
+
+enum UserState{
+	New,
+	Active,
+	Blocked,
+	Banned
+} 
+
+class Account{
+	id: String {id}
+	billing_address: Address,
+	is_closed: Boolean
+	open: Date
+	closed: Date
+}
+
+class Payment{
+	id: String {id}
+	paid:Date
+	total:Real
+	details:String
+}
+
+class ShoppingCart{
+	created: Date
+}
+
+class Order{
+	number: String {id}
+	ordered: Date
+	shipped: Date
+	ship_to: Address
+	status : OrderStatus
+	total: real
+}
+class LineItem{
+	quantity: Integer
+	price : Price
+}
+
+class Product{
+	id: String {id}
+	name: String
+	supplier: Supplier
+}
+
+enum OrderStatus{
+	New,
+	Hold,
+	Shipped,
+	Delivered,
+	Closed
+
+}
+
+
+
+WebUser "1" - "0..1" ShoppingCart
+
+Customer "1" *- "1" Account
+
+Account "1" *- "1" ShoppingCart
+Account "1" - "1" Payment
+Account "1" *- "1" Order :*{ordered,unique}
+
+Payment "1" - "1" Order
+
+Order "1" - "1" LineItem
+LineItem "1" - "1" Product
+ShoppingCart "1" - "1" LineItem
+
+
+@enduml
