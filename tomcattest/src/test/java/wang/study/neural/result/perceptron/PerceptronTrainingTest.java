@@ -31,7 +31,7 @@ public class PerceptronTrainingTest {
         String content = IOUtils.toString(input,"utf-8");
         String[] lines = content.split("\\r\\n");
         double[][] inputData = null;
-        double[] output = null;
+        double[][] output = null;
         for(int i=0;i<lines.length;i++){
             String line = lines[i];
             String[] value = line.split(" ");
@@ -40,14 +40,14 @@ public class PerceptronTrainingTest {
                 inputData = new double[lines.length][inputLength+1];
             }
             if(output == null ){
-                output = new double[lines.length];
+                output = new double[lines.length][1];
             }
             inputData[i]= new double[inputLength+1];
             for(int k=0;k<inputLength;k++){
                 inputData[i][k] = toDouble(value[k]);
             }
             inputData[i][inputLength] = 1;
-            output[i]= toDouble(value[value.length-1]);
+            output[i][0]= toDouble(value[value.length-1]);
         }
         DataSet dataSet = new DataSet(inputData,output);
         return dataSet;

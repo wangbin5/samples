@@ -46,7 +46,7 @@ public class Chart {
             false           // urls
         );
 		
-        ChartFrame frame = new ChartFrame("Neural Net Chart", chart);
+        ChartFrame frame = new ChartFrame("Neuron Net Chart", chart);
 		frame.pack();
 		frame.setVisible(true);
 
@@ -136,7 +136,7 @@ public class Chart {
 		plot.setRenderer(1, rendererMax);
 		
 
-		ChartFrame frame = new ChartFrame("Neural Net Chart", chart);
+		ChartFrame frame = new ChartFrame("Neuron Net Chart", chart);
 		frame.pack();
 		frame.setVisible(true);
 
@@ -208,7 +208,7 @@ public class Chart {
             false           // urls
         );
 		
-		ChartFrame frame = new ChartFrame("Neural Net Chart", chart);
+		ChartFrame frame = new ChartFrame("Neuron Net Chart", chart);
 		frame.pack();
 		frame.setVisible(true);
 

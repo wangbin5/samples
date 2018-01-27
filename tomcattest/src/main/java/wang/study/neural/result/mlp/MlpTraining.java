@@ -1,17 +1,18 @@
-package wang.study.neural.result.perceptron;
+package wang.study.neural.result.mlp;
 
 import wang.study.neural.result.DataSet;
 import wang.study.neural.result.NeuralNetConfig;
 
 /**
- * 神经网络训练
+ * Created by Administrator on 2018/1/22.
  */
-public class PerceptronTraining {
+public class MlpTraining {
+    private boolean last = false;
+
     //配置参数
     private NeuralNetConfig neuralNetConfig = new NeuralNetConfig();
-    //感知机
-    private Perceptron perceptron = new Perceptron();
 
+    private Mlp mlp = new Mlp();
 
     /**
      * 开始训练
@@ -19,7 +20,7 @@ public class PerceptronTraining {
      */
     public void train(DataSet trainingSet){
         //重置之前训练的结果
-        perceptron.reset(neuralNetConfig,trainingSet.getCols()-1);
+        mlp.reset(neuralNetConfig,trainingSet.getCols()-1,2);
         int epoch =0;
         double error = Double.MAX_VALUE;
         //神经网络停止条件
@@ -27,8 +28,8 @@ public class PerceptronTraining {
             boolean stop = true;
             for (int i = 0; i < trainingSet.getRows(); i++) {
                 double[] input = trainingSet.getInputData(i);
-                double realResult = trainingSet.getSingleOutputData(i);
-                boolean shouldStop = perceptron.train(input,realResult);
+                double[] realResult = trainingSet.getOutputData(i);
+                boolean shouldStop = mlp.train(input,realResult);
                 if(!shouldStop){
                     stop = false;
                 }
@@ -36,7 +37,6 @@ public class PerceptronTraining {
             if(stop){
                 break;
             }
-
             epoch++;
         }
     }
@@ -48,14 +48,19 @@ public class PerceptronTraining {
      * @return
      */
     public double check(DataSet checkSet){
+        int length = 1;
         double cost = 0.0;
         for(int i=0;i<checkSet.getRows();i++){
             double[] input = checkSet.getInputData(i);
-            double realResult = checkSet.getSingleOutputData(i);
-            double predict = perceptron.prediction(input);
-            cost+=Math.pow(predict-realResult,2);
+            length = input.length;
+            double[] realResult = checkSet.getOutputData(i);
+            double[] predict = mlp.prediction(input);
+            for(int j=0;j<realResult.length;j++){
+                cost+=Math.pow(predict[j]-realResult[j],2);
+            }
+
         }
-        cost = cost/checkSet.getRows();
+        cost = cost/(length*checkSet.getRows());
         return cost;
     }
 
@@ -64,8 +69,8 @@ public class PerceptronTraining {
      * @param input 输入数据
      * @return
      */
-    public double prediction(double[] input) {
-        return this.perceptron.prediction(input);
+    public double[] prediction(double[] input) {
+        return this.mlp.prediction(input);
     }
 
     public NeuralNetConfig getNeuralNetConfig() {
@@ -74,5 +79,14 @@ public class PerceptronTraining {
 
     public void setNeuralNetConfig(NeuralNetConfig neuralNetConfig) {
         this.neuralNetConfig = neuralNetConfig;
+    }
+
+    @Override
+    public String toString() {
+        return "MlpTraining{" +
+                "last=" + last +
+                ", neuralNetConfig=" + neuralNetConfig +
+                ", mlp=" + mlp +
+                '}';
     }
 }
