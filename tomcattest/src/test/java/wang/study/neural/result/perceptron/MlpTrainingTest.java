@@ -5,9 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
 import wang.study.neural.result.DataSet;
-import wang.study.neural.result.NeuralNetConfig;
-import wang.study.neural.result.activate.HardLimitingFunction;
-import wang.study.neural.result.activate.ReluFunction;
+import wang.study.neural.result.NeuronNetConfig;
 import wang.study.neural.result.activate.SigmoidFunction;
 import wang.study.neural.result.mlp.MlpTraining;
 
@@ -25,10 +23,10 @@ public class MlpTrainingTest {
     private DataSet dataSet;
     @Before
     public void setUp() throws IOException {
-        NeuralNetConfig config= new NeuralNetConfig();
+        NeuronNetConfig config= new NeuronNetConfig();
         config.setActivateFunction(new SigmoidFunction());
         training = new MlpTraining();
-        training.setNeuralNetConfig(config);
+        training.setNeuronNetConfig(config);
 
     }
 

@@ -1,40 +1,30 @@
 package wang.study.neural.result.mlp;
 
-import wang.study.neural.lesson1.Layer;
-import wang.study.neural.result.NeuralNetConfig;
-import wang.study.neural.result.activate.ActivateFunction;
-
-import java.util.ArrayList;
-import java.util.List;
+import wang.study.neural.result.NeuronNetConfig;
 
 /**
  * Created by Administrator on 2018/1/22.
  */
 public class Mlp {
-    private MlpLayer first;
+    private MlpLayer hiddenLayer;
 
-    public void reset(NeuralNetConfig neuralNetConfig,  int nodeCount,int layerCount) {
-        MlpLayer last = null;
-        for(int i=0;i<layerCount;i++){
-            last = createlayer(nodeCount,neuralNetConfig,last);
-            if(this.first == null){
-                this.first = last;
-            }
+    public void reset(NeuronNetConfig neuronNetConfig) {
+        hiddenLayer = this.createlayer(3,2,neuronNetConfig,null);
+        MlpLayer outputLayer =this.createlayer(2,3,neuronNetConfig,hiddenLayer);
 
-        }
     }
 
-    private MlpLayer createlayer(int nodeCount, NeuralNetConfig neuralNetConfig, MlpLayer last) {
-        return new MlpLayer(nodeCount,last,neuralNetConfig);
+    private MlpLayer createlayer(int nodeCount,int weightLength, NeuronNetConfig neuronNetConfig, MlpLayer last) {
+        return new MlpLayer(nodeCount,weightLength,last, neuronNetConfig);
     }
 
 
     public boolean train(double[] input, double[] result) {
-        return first.train(input,result);
+        return hiddenLayer.train(input,result);
     }
 
     public double[] prediction(double[] input) {
-        MlpLayer layer = this.first;
+       MlpLayer layer = this.hiddenLayer;
        while(layer!=null){
             input = layer.preidct(input);
             layer = layer.getNext();
@@ -45,7 +35,7 @@ public class Mlp {
     @Override
     public String toString() {
         return "Mlp{" +
-                "first=" + first +
+                "hiddenLayer=" + hiddenLayer +
                 '}';
     }
 }

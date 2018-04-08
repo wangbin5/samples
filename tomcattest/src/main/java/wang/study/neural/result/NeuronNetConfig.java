@@ -6,7 +6,7 @@ import wang.study.neural.result.activate.HardLimitingFunction;
 /**
  * Created by Administrator on 2018/1/10.
  */
-public class NeuralNetConfig {
+public class NeuronNetConfig {
     /**
      * 激活函数
      */

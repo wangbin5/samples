@@ -1,33 +1,33 @@
 package wang.study.neural.result.mlp;
 
-import wang.study.neural.result.NeuralNetConfig;
+import wang.study.neural.result.NeuronNetConfig;
 import wang.study.neural.result.activate.ActivateFunction;
 import wang.study.neural.result.model.Neuron;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 //层
 public class MlpLayer {
 
-	private List<Neuron> neurons = new ArrayList<>();
+	private List<MlpNeuron> neurons = new ArrayList<>();
 	private ActivateFunction activateFunction;
-	private NeuralNetConfig neuralNetConfig;
+	private NeuronNetConfig neuronNetConfig;
 	private MlpLayer next;
 	private MlpLayer last;
 	private boolean stop;
 	private double[] sums;
 	private double[] input;
-	public MlpLayer(int size,MlpLayer last,NeuralNetConfig neuralNetConfig){
-		this.activateFunction = neuralNetConfig.getActivateFunction();
+
+	public MlpLayer(int neuronCount,int size,MlpLayer last,NeuronNetConfig neuronNetConfig){
+		this.activateFunction = neuronNetConfig.getActivateFunction();
 		if(last!=null){
 			last.next = this;
 		}
 		this.last = last;
-		this.neuralNetConfig = neuralNetConfig;
-		for(int i=0;i<size;i++){
-			neurons.add(new Neuron(size));
+		this.neuronNetConfig = neuronNetConfig;
+		for(int i=0;i<neuronCount;i++){
+			neurons.add(new MlpNeuron(size));
 		}
 	}
 
@@ -44,7 +44,7 @@ public class MlpLayer {
 		else{
 			double error = calculateError(calresults,result);
 			System.out.println("mse is "+error);
-			if(Math.abs(error) < this.neuralNetConfig.getTargetError()){
+			if(Math.abs(error) < this.neuronNetConfig.getTargetError()){
 				return true;
 			}
 			//修正权值
@@ -52,7 +52,7 @@ public class MlpLayer {
 			for(int i=0;i<this.neurons.size();i++){
 				double thi = (calresults[i]-result[i])*this.activateFunction.derivative(sums[i]);
 				for(int j=0;j<input.length;j++){
-					this.neurons.get(i).addWeight(j,input[j]*thi*this.neuralNetConfig.getGrowthRate());
+					this.neurons.get(i).addWeight(j,input[j]*thi*this.neuronNetConfig.getGrowthRate());
 				}
 				ths[i] = thi;
 			}
@@ -73,24 +73,28 @@ public class MlpLayer {
 		return append;
 	}
 
-	private void back(double[] lasts,List<Neuron> lastNeurons) {
+	private void back(double[] lasts,List<MlpNeuron> lastNeurons) {
 		double[] ths = new double[this.neurons.size()];
-		for(int i=0;i<this.neurons.size();i++){
+		for(int i = 0; i<lastNeurons.size();i++){
 			double thi = calculateTh(lasts, lastNeurons,i);
+			ths[i]= thi;
+		}
+		for(int i=0;i<this.neurons.size();i++){
+			double thi = ths[i];
 			for(int j=0;j<input.length;j++){
-				this.neurons.get(i).addWeight(j,input[j]*thi*this.neuralNetConfig.getGrowthRate());
+				this.neurons.get(i).addWeight(j,input[j]*thi*this.neuronNetConfig.getGrowthRate());
 			}
-			ths[i] = thi;
+
 		}
 		if(this.last!=null){
 			this.last.back(ths,this.neurons);
 		}
 	}
 
-	private double calculateTh(double[] lasts, List<Neuron> lastNeurons,int i) {
+	private double calculateTh(double[] lasts, List<MlpNeuron> lastNeurons,int i) {
     	double sum = 0.0;
     	for(int l=0;l<lasts.length;l++){
-    		sum+= lasts[l]*lastNeurons.get(l).getWeight()[i]*this.activateFunction.derivative(sums[l]);
+    		sum+= lasts[l]*lastNeurons.get(l).getWeight(i)*this.activateFunction.derivative(sums[l]);
     		if(Double.isNaN(sum)){
     			throw new RuntimeException("");
 			}

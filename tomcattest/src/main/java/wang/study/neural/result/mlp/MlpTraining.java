@@ -1,7 +1,7 @@
 package wang.study.neural.result.mlp;
 
 import wang.study.neural.result.DataSet;
-import wang.study.neural.result.NeuralNetConfig;
+import wang.study.neural.result.NeuronNetConfig;
 
 /**
  * Created by Administrator on 2018/1/22.
@@ -10,7 +10,7 @@ public class MlpTraining {
     private boolean last = false;
 
     //配置参数
-    private NeuralNetConfig neuralNetConfig = new NeuralNetConfig();
+    private NeuronNetConfig neuronNetConfig = new NeuronNetConfig();
 
     private Mlp mlp = new Mlp();
 
@@ -20,11 +20,11 @@ public class MlpTraining {
      */
     public void train(DataSet trainingSet){
         //重置之前训练的结果
-        mlp.reset(neuralNetConfig,trainingSet.getCols()-1,2);
+        mlp.reset(neuronNetConfig);
         int epoch =0;
         double error = Double.MAX_VALUE;
         //神经网络停止条件
-        while(epoch < neuralNetConfig.getMaxEpochs()){
+        while(epoch < neuronNetConfig.getMaxEpochs()){
             boolean stop = true;
             for (int i = 0; i < trainingSet.getRows(); i++) {
                 double[] input = trainingSet.getInputData(i);
@@ -73,19 +73,19 @@ public class MlpTraining {
         return this.mlp.prediction(input);
     }
 
-    public NeuralNetConfig getNeuralNetConfig() {
-        return neuralNetConfig;
+    public NeuronNetConfig getNeuronNetConfig() {
+        return neuronNetConfig;
     }
 
-    public void setNeuralNetConfig(NeuralNetConfig neuralNetConfig) {
-        this.neuralNetConfig = neuralNetConfig;
+    public void setNeuronNetConfig(NeuronNetConfig neuronNetConfig) {
+        this.neuronNetConfig = neuronNetConfig;
     }
 
     @Override
     public String toString() {
         return "MlpTraining{" +
                 "last=" + last +
-                ", neuralNetConfig=" + neuralNetConfig +
+                ", neuronNetConfig=" + neuronNetConfig +
                 ", mlp=" + mlp +
                 '}';
     }

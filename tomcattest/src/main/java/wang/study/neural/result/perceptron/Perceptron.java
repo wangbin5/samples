@@ -1,6 +1,6 @@
 package wang.study.neural.result.perceptron;
 
-import wang.study.neural.result.NeuralNetConfig;
+import wang.study.neural.result.NeuronNetConfig;
 import wang.study.neural.result.model.Neuron;
 
 /**
@@ -15,7 +15,7 @@ public class Perceptron {
     /**
      * 结果要求
      */
-    private NeuralNetConfig config;
+    private NeuronNetConfig config;
 
 
 
@@ -55,10 +55,10 @@ public class Perceptron {
 
     /**
      * 重置之前训练的结果
-     * @param neuralNetConfig
+     * @param neuronNetConfig
      */
-    public void reset(NeuralNetConfig neuralNetConfig,int length) {
-        this.config = neuralNetConfig;
+    public void reset(NeuronNetConfig neuronNetConfig, int length) {
+        this.config = neuronNetConfig;
         this.neuron = new Neuron(length);
     }
 }

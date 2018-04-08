@@ -1,14 +1,14 @@
 package wang.study.neural.result.perceptron;
 
 import wang.study.neural.result.DataSet;
-import wang.study.neural.result.NeuralNetConfig;
+import wang.study.neural.result.NeuronNetConfig;
 
 /**
  * 神经网络训练
  */
 public class PerceptronTraining {
     //配置参数
-    private NeuralNetConfig neuralNetConfig = new NeuralNetConfig();
+    private NeuronNetConfig neuronNetConfig = new NeuronNetConfig();
     //感知机
     private Perceptron perceptron = new Perceptron();
 
@@ -19,11 +19,11 @@ public class PerceptronTraining {
      */
     public void train(DataSet trainingSet){
         //重置之前训练的结果
-        perceptron.reset(neuralNetConfig,trainingSet.getCols()-1);
+        perceptron.reset(neuronNetConfig,trainingSet.getCols()-1);
         int epoch =0;
         double error = Double.MAX_VALUE;
         //神经网络停止条件
-        while(epoch < neuralNetConfig.getMaxEpochs()){
+        while(epoch < neuronNetConfig.getMaxEpochs()){
             boolean stop = true;
             for (int i = 0; i < trainingSet.getRows(); i++) {
                 double[] input = trainingSet.getInputData(i);
@@ -68,11 +68,11 @@ public class PerceptronTraining {
         return this.perceptron.prediction(input);
     }
 
-    public NeuralNetConfig getNeuralNetConfig() {
-        return neuralNetConfig;
+    public NeuronNetConfig getNeuronNetConfig() {
+        return neuronNetConfig;
     }
 
-    public void setNeuralNetConfig(NeuralNetConfig neuralNetConfig) {
-        this.neuralNetConfig = neuralNetConfig;
+    public void setNeuronNetConfig(NeuronNetConfig neuronNetConfig) {
+        this.neuronNetConfig = neuronNetConfig;
     }
 }

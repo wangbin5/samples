@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
 import wang.study.neural.result.DataSet;
-import wang.study.neural.result.NeuralNetConfig;
+import wang.study.neural.result.NeuronNetConfig;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,9 +20,9 @@ public class PerceptronTrainingTest {
     private DataSet dataSet;
     @Before
     public void setUp() throws IOException {
-        NeuralNetConfig config= new NeuralNetConfig();
+        NeuronNetConfig config= new NeuronNetConfig();
         training = new PerceptronTraining();
-        training.setNeuralNetConfig(config);
+        training.setNeuronNetConfig(config);
 
     }
 
