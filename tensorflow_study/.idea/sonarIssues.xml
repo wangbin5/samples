@@ -43,6 +43,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/docs/ai/study_indexes.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/docs/ai/人工智能的产品.md">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/study/chapter3_1.py">
           <value>
             <set />
@@ -179,18 +189,18 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4SzOJsjIJWKibq4V" />
-                <option name="line" value="25" />
-                <option name="message" value="fieldCommentRequirement Required" />
-                <option name="ruleKey" value="pmd:CommentRequired" />
-                <option name="severity" value="MINOR" />
-              </SonarIssue>
-              <SonarIssue>
-                <option name="isNew" value="false" />
                 <option name="key" value="AWAK4SzSJsjIJWKibq4h" />
                 <option name="line" value="50" />
                 <option name="message" value="Class 'BulletinController' looks like designed for extension (can be subclassed), but the method 'updateBulletin' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BulletinController' final or making the method 'updateBulletin' static/final/abstract/empty, or adding allowed annotation for the method." />
                 <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4SzOJsjIJWKibq4V" />
+                <option name="line" value="25" />
+                <option name="message" value="fieldCommentRequirement Required" />
+                <option name="ruleKey" value="pmd:CommentRequired" />
                 <option name="severity" value="MINOR" />
               </SonarIssue>
               <SonarIssue>
@@ -258,14 +268,6 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4SzSJsjIJWKibq4i" />
-                <option name="line" value="56" />
-                <option name="message" value="Class 'BulletinController' looks like designed for extension (can be subclassed), but the method 'removeBulletin' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BulletinController' final or making the method 'removeBulletin' static/final/abstract/empty, or adding allowed annotation for the method." />
-                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck" />
-                <option name="severity" value="MINOR" />
-              </SonarIssue>
-              <SonarIssue>
-                <option name="isNew" value="false" />
                 <option name="key" value="AWAK4SzJJsjIJWKibq4F" />
                 <option name="line" value="44" />
                 <option name="message" value="Make this line start at column 5." />
@@ -274,17 +276,17 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4SzSJsjIJWKibq4k" />
-                <option name="line" value="68" />
-                <option name="message" value="Class 'BulletinController' looks like designed for extension (can be subclassed), but the method 'cancelTopBulletin' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BulletinController' final or making the method 'cancelTopBulletin' static/final/abstract/empty, or adding allowed annotation for the method." />
+                <option name="key" value="AWAK4SzSJsjIJWKibq4i" />
+                <option name="line" value="56" />
+                <option name="message" value="Class 'BulletinController' looks like designed for extension (can be subclassed), but the method 'removeBulletin' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BulletinController' final or making the method 'removeBulletin' static/final/abstract/empty, or adding allowed annotation for the method." />
                 <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck" />
                 <option name="severity" value="MINOR" />
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4SzRJsjIJWKibq4g" />
-                <option name="line" value="40" />
-                <option name="message" value="Class 'BulletinController' looks like designed for extension (can be subclassed), but the method 'addBulletin' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BulletinController' final or making the method 'addBulletin' static/final/abstract/empty, or adding allowed annotation for the method." />
+                <option name="key" value="AWAK4SzSJsjIJWKibq4k" />
+                <option name="line" value="68" />
+                <option name="message" value="Class 'BulletinController' looks like designed for extension (can be subclassed), but the method 'cancelTopBulletin' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BulletinController' final or making the method 'cancelTopBulletin' static/final/abstract/empty, or adding allowed annotation for the method." />
                 <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck" />
                 <option name="severity" value="MINOR" />
               </SonarIssue>
@@ -298,10 +300,10 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4SzLJsjIJWKibq4J" />
-                <option name="line" value="68" />
-                <option name="message" value="Make this line start at column 5." />
-                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="key" value="AWAK4SzRJsjIJWKibq4g" />
+                <option name="line" value="40" />
+                <option name="message" value="Class 'BulletinController' looks like designed for extension (can be subclassed), but the method 'addBulletin' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BulletinController' final or making the method 'addBulletin' static/final/abstract/empty, or adding allowed annotation for the method." />
+                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck" />
                 <option name="severity" value="MINOR" />
               </SonarIssue>
               <SonarIssue>
@@ -314,11 +316,11 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4SzOJsjIJWKibq4U" />
-                <option name="line" value="25" />
-                <option name="message" value="Found non-transient, non-static member. Please mark as transient or provide accessors." />
-                <option name="ruleKey" value="pmd:BeanMembersShouldSerialize" />
-                <option name="severity" value="INFO" />
+                <option name="key" value="AWAK4SzLJsjIJWKibq4J" />
+                <option name="line" value="68" />
+                <option name="message" value="Make this line start at column 5." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
@@ -327,6 +329,14 @@
                 <option name="message" value="Class 'BulletinController' looks like designed for extension (can be subclassed), but the method 'findBulletin' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BulletinController' final or making the method 'findBulletin' static/final/abstract/empty, or adding allowed annotation for the method." />
                 <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck" />
                 <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4SzOJsjIJWKibq4U" />
+                <option name="line" value="25" />
+                <option name="message" value="Found non-transient, non-static member. Please mark as transient or provide accessors." />
+                <option name="ruleKey" value="pmd:BeanMembersShouldSerialize" />
+                <option name="severity" value="INFO" />
               </SonarIssue>
             </set>
           </value>
@@ -344,17 +354,17 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S4eJsjIJWKibrHf" />
-                <option name="line" value="63" />
-                <option name="message" value="Make this line start at column 5." />
+                <option name="key" value="AWAK4S4fJsjIJWKibrHl" />
+                <option name="line" value="112" />
+                <option name="message" value="Make this line start at column 7." />
                 <option name="ruleKey" value="squid:IndentationCheck" />
                 <option name="severity" value="MINOR" />
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S4fJsjIJWKibrHl" />
-                <option name="line" value="112" />
-                <option name="message" value="Make this line start at column 7." />
+                <option name="key" value="AWAK4S4eJsjIJWKibrHf" />
+                <option name="line" value="63" />
+                <option name="message" value="Make this line start at column 5." />
                 <option name="ruleKey" value="squid:IndentationCheck" />
                 <option name="severity" value="MINOR" />
               </SonarIssue>
@@ -384,10 +394,10 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S4nJsjIJWKibrIE" />
-                <option name="line" value="32" />
-                <option name="message" value="fieldCommentRequirement Required" />
-                <option name="ruleKey" value="pmd:CommentRequired" />
+                <option name="key" value="AWAK4S4pJsjIJWKibrIO" />
+                <option name="line" value="221" />
+                <option name="message" value="Class 'PxXmController' looks like designed for extension (can be subclassed), but the method 'listPxFbfwForm' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PxXmController' final or making the method 'listPxFbfwForm' static/final/abstract/empty, or adding allowed annotation for the method." />
+                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck" />
                 <option name="severity" value="MINOR" />
               </SonarIssue>
               <SonarIssue>
@@ -400,10 +410,10 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S4pJsjIJWKibrIO" />
-                <option name="line" value="221" />
-                <option name="message" value="Class 'PxXmController' looks like designed for extension (can be subclassed), but the method 'listPxFbfwForm' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PxXmController' final or making the method 'listPxFbfwForm' static/final/abstract/empty, or adding allowed annotation for the method." />
-                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck" />
+                <option name="key" value="AWAK4S4nJsjIJWKibrIE" />
+                <option name="line" value="32" />
+                <option name="message" value="fieldCommentRequirement Required" />
+                <option name="ruleKey" value="pmd:CommentRequired" />
                 <option name="severity" value="MINOR" />
               </SonarIssue>
               <SonarIssue>
@@ -424,8 +434,16 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S4hJsjIJWKibrHq" />
-                <option name="line" value="165" />
+                <option name="key" value="AWAK4S4pJsjIJWKibrIM" />
+                <option name="line" value="21" />
+                <option name="message" value="Wrong order for 'java.util.List' import." />
+                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S4iJsjIJWKibrHx" />
+                <option name="line" value="232" />
                 <option name="message" value="Make this line start at column 5." />
                 <option name="ruleKey" value="squid:IndentationCheck" />
                 <option name="severity" value="MINOR" />
@@ -440,18 +458,10 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S4iJsjIJWKibrHx" />
-                <option name="line" value="232" />
+                <option name="key" value="AWAK4S4hJsjIJWKibrHq" />
+                <option name="line" value="165" />
                 <option name="message" value="Make this line start at column 5." />
                 <option name="ruleKey" value="squid:IndentationCheck" />
-                <option name="severity" value="MINOR" />
-              </SonarIssue>
-              <SonarIssue>
-                <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S4pJsjIJWKibrIM" />
-                <option name="line" value="21" />
-                <option name="message" value="Wrong order for 'java.util.List' import." />
-                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck" />
                 <option name="severity" value="MINOR" />
               </SonarIssue>
               <SonarIssue>
@@ -512,18 +522,18 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S4fJsjIJWKibrHj" />
-                <option name="line" value="101" />
-                <option name="message" value="Make this line start at column 5." />
-                <option name="ruleKey" value="squid:IndentationCheck" />
-                <option name="severity" value="MINOR" />
-              </SonarIssue>
-              <SonarIssue>
-                <option name="isNew" value="false" />
                 <option name="key" value="AWAK4S4qJsjIJWKibrIQ" />
                 <option name="line" value="246" />
                 <option name="message" value="Class 'PxXmController' looks like designed for extension (can be subclassed), but the method 'rePublishPxFbfw' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PxXmController' final or making the method 'rePublishPxFbfw' static/final/abstract/empty, or adding allowed annotation for the method." />
                 <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S4fJsjIJWKibrHj" />
+                <option name="line" value="101" />
+                <option name="message" value="Make this line start at column 5." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
                 <option name="severity" value="MINOR" />
               </SonarIssue>
               <SonarIssue>
@@ -544,17 +554,17 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S4dJsjIJWKibrHd" />
-                <option name="line" value="32" />
-                <option name="message" value="Make this line start at column 3." />
+                <option name="key" value="AWAK4S4iJsjIJWKibrHu" />
+                <option name="line" value="206" />
+                <option name="message" value="Make this line start at column 5." />
                 <option name="ruleKey" value="squid:IndentationCheck" />
                 <option name="severity" value="MINOR" />
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S4iJsjIJWKibrHu" />
-                <option name="line" value="206" />
-                <option name="message" value="Make this line start at column 5." />
+                <option name="key" value="AWAK4S4dJsjIJWKibrHd" />
+                <option name="line" value="32" />
+                <option name="message" value="Make this line start at column 3." />
                 <option name="ruleKey" value="squid:IndentationCheck" />
                 <option name="severity" value="MINOR" />
               </SonarIssue>
@@ -568,16 +578,16 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S4jJsjIJWKibrH2" />
-                <option name="line" value="261" />
+                <option name="key" value="AWAK4S4fJsjIJWKibrHi" />
+                <option name="line" value="91" />
                 <option name="message" value="Make this line start at column 5." />
                 <option name="ruleKey" value="squid:IndentationCheck" />
                 <option name="severity" value="MINOR" />
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S4fJsjIJWKibrHi" />
-                <option name="line" value="91" />
+                <option name="key" value="AWAK4S4jJsjIJWKibrH2" />
+                <option name="line" value="261" />
                 <option name="message" value="Make this line start at column 5." />
                 <option name="ruleKey" value="squid:IndentationCheck" />
                 <option name="severity" value="MINOR" />
@@ -592,14 +602,6 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S4kJsjIJWKibrH3" />
-                <option name="line" value="271" />
-                <option name="message" value="Make this line start at column 5." />
-                <option name="ruleKey" value="squid:IndentationCheck" />
-                <option name="severity" value="MINOR" />
-              </SonarIssue>
-              <SonarIssue>
-                <option name="isNew" value="false" />
                 <option name="key" value="AWAK4S4eJsjIJWKibrHh" />
                 <option name="line" value="81" />
                 <option name="message" value="Make this line start at column 5." />
@@ -608,8 +610,8 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S4eJsjIJWKibrHe" />
-                <option name="line" value="41" />
+                <option name="key" value="AWAK4S4kJsjIJWKibrH3" />
+                <option name="line" value="271" />
                 <option name="message" value="Make this line start at column 5." />
                 <option name="ruleKey" value="squid:IndentationCheck" />
                 <option name="severity" value="MINOR" />
@@ -624,6 +626,14 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S4eJsjIJWKibrHe" />
+                <option name="line" value="41" />
+                <option name="message" value="Make this line start at column 5." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
                 <option name="key" value="AWAK4S4hJsjIJWKibrHt" />
                 <option name="line" value="196" />
                 <option name="message" value="Make this line start at column 5." />
@@ -632,16 +642,16 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S4jJsjIJWKibrHz" />
-                <option name="line" value="244" />
+                <option name="key" value="AWAK4S4gJsjIJWKibrHp" />
+                <option name="line" value="156" />
                 <option name="message" value="Make this line start at column 5." />
                 <option name="ruleKey" value="squid:IndentationCheck" />
                 <option name="severity" value="MINOR" />
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S4gJsjIJWKibrHp" />
-                <option name="line" value="156" />
+                <option name="key" value="AWAK4S4jJsjIJWKibrHz" />
+                <option name="line" value="244" />
                 <option name="message" value="Make this line start at column 5." />
                 <option name="ruleKey" value="squid:IndentationCheck" />
                 <option name="severity" value="MINOR" />
@@ -658,6 +668,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/px/controller/PxbmController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/px/controller/PxxmKcController.java">
           <value>
             <set />
           </value>
@@ -694,18 +709,18 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S9jJsjIJWKibra6" />
+                <option name="message" value="22 more comment lines need to be written to reach the minimum threshold of 25.0% comment density." />
+                <option name="ruleKey" value="common-java:InsufficientCommentDensity" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
                 <option name="key" value="AWAK4S9kJsjIJWKibra9" />
                 <option name="line" value="17" />
                 <option name="message" value="Make this line start at column 3." />
                 <option name="ruleKey" value="squid:IndentationCheck" />
                 <option name="severity" value="MINOR" />
-              </SonarIssue>
-              <SonarIssue>
-                <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S9jJsjIJWKibra6" />
-                <option name="message" value="22 more comment lines need to be written to reach the minimum threshold of 25.0% comment density." />
-                <option name="ruleKey" value="common-java:InsufficientCommentDensity" />
-                <option name="severity" value="INFO" />
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
@@ -756,19 +771,19 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S_YJsjIJWKibri6" />
-                <option name="line" value="9" />
-                <option name="message" value="Wrong order for 'javax.persistence.*' import." />
-                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck" />
-                <option name="severity" value="MINOR" />
-              </SonarIssue>
-              <SonarIssue>
-                <option name="isNew" value="false" />
                 <option name="key" value="AWAK4S_ZJsjIJWKibri8" />
                 <option name="line" value="17" />
                 <option name="message" value="Class should define a constructor." />
                 <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck" />
                 <option name="severity" value="INFO" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_YJsjIJWKibri6" />
+                <option name="line" value="9" />
+                <option name="message" value="Wrong order for 'javax.persistence.*' import." />
+                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck" />
+                <option name="severity" value="MINOR" />
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
@@ -840,19 +855,19 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S_vJsjIJWKibrkb" />
-                <option name="line" value="12" />
-                <option name="message" value="Class should define a constructor." />
-                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck" />
-                <option name="severity" value="INFO" />
-              </SonarIssue>
-              <SonarIssue>
-                <option name="isNew" value="false" />
                 <option name="key" value="AWAK4S_sJsjIJWKibrkO" />
                 <option name="line" value="47" />
                 <option name="message" value="Make this line start at column 5." />
                 <option name="ruleKey" value="squid:IndentationCheck" />
                 <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_vJsjIJWKibrkb" />
+                <option name="line" value="12" />
+                <option name="message" value="Class should define a constructor." />
+                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck" />
+                <option name="severity" value="INFO" />
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
@@ -877,13 +892,6 @@
             <set>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S_0JsjIJWKibrkk" />
-                <option name="message" value="27 more comment lines need to be written to reach the minimum threshold of 25.0% comment density." />
-                <option name="ruleKey" value="common-java:InsufficientCommentDensity" />
-                <option name="severity" value="INFO" />
-              </SonarIssue>
-              <SonarIssue>
-                <option name="isNew" value="false" />
                 <option name="key" value="AWAK4S_8JsjIJWKibrlL" />
                 <option name="line" value="19" />
                 <option name="message" value="fieldCommentRequirement Required" />
@@ -892,16 +900,15 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S_8JsjIJWKibrlM" />
-                <option name="line" value="21" />
-                <option name="message" value="fieldCommentRequirement Required" />
-                <option name="ruleKey" value="pmd:CommentRequired" />
-                <option name="severity" value="MINOR" />
+                <option name="key" value="AWAK4S_0JsjIJWKibrkk" />
+                <option name="message" value="27 more comment lines need to be written to reach the minimum threshold of 25.0% comment density." />
+                <option name="ruleKey" value="common-java:InsufficientCommentDensity" />
+                <option name="severity" value="INFO" />
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S_8JsjIJWKibrlP" />
-                <option name="line" value="24" />
+                <option name="key" value="AWAK4S_8JsjIJWKibrlM" />
+                <option name="line" value="21" />
                 <option name="message" value="fieldCommentRequirement Required" />
                 <option name="ruleKey" value="pmd:CommentRequired" />
                 <option name="severity" value="MINOR" />
@@ -916,16 +923,16 @@
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S_8JsjIJWKibrlN" />
-                <option name="line" value="22" />
+                <option name="key" value="AWAK4S_8JsjIJWKibrlP" />
+                <option name="line" value="24" />
                 <option name="message" value="fieldCommentRequirement Required" />
                 <option name="ruleKey" value="pmd:CommentRequired" />
                 <option name="severity" value="MINOR" />
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="AWAK4S_8JsjIJWKibrlO" />
-                <option name="line" value="23" />
+                <option name="key" value="AWAK4S_8JsjIJWKibrlN" />
+                <option name="line" value="22" />
                 <option name="message" value="fieldCommentRequirement Required" />
                 <option name="ruleKey" value="pmd:CommentRequired" />
                 <option name="severity" value="MINOR" />
@@ -936,6 +943,14 @@
                 <option name="line" value="19" />
                 <option name="message" value="Make this line start at column 3." />
                 <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAK4S_8JsjIJWKibrlO" />
+                <option name="line" value="23" />
+                <option name="message" value="fieldCommentRequirement Required" />
+                <option name="ruleKey" value="pmd:CommentRequired" />
                 <option name="severity" value="MINOR" />
               </SonarIssue>
               <SonarIssue>
@@ -954,9 +969,321 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/px/service/pxxm/PxxmScheduleService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/px/service/pxxmkc/PxkcQuery.java">
           <value>
             <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/px/service/pxxmkc/PxxmKcScheduleService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/px/service/pxxmkc/PxxmScheduleService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/utils/CommonUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/java/com/nd/esp/statistics/training/utils/DateUtils.java">
+          <value>
+            <set>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7tQti-WQdE_C3N" />
+                <option name="line" value="16" />
+                <option name="message" value="fieldCommentRequirement Required" />
+                <option name="ruleKey" value="pmd:CommentRequired" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7qQti-WQdE_C3E" />
+                <option name="line" value="16" />
+                <option name="message" value="Make the &quot;logger&quot; logger private static final and rename it to comply with the format &quot;LOG(?:GER)?&quot;." />
+                <option name="ruleKey" value="squid:S1312" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7pQti-WQdE_C3D" />
+                <option name="line" value="16" />
+                <option name="message" value="Move this variable to comply with Java Code Conventions." />
+                <option name="ruleKey" value="squid:S1213" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7uQti-WQdE_C3P" />
+                <option name="line" value="20" />
+                <option name="message" value="Local variable 'format' could be declared final" />
+                <option name="ruleKey" value="pmd:LocalVariableCouldBeFinal" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7nQti-WQdE_C29" />
+                <option name="line" value="20" />
+                <option name="message" value="Make this line start at column 5." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7nQti-WQdE_C28" />
+                <option name="line" value="13" />
+                <option name="message" value="Make this line start at column 3." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7yQti-WQdE_C3a" />
+                <option name="line" value="44" />
+                <option name="message" value="publicMethodCommentRequirement Required" />
+                <option name="ruleKey" value="pmd:CommentRequired" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7sQti-WQdE_C3J" />
+                <option name="line" value="44" />
+                <option name="message" value="Document this public method." />
+                <option name="ruleKey" value="squid:UndocumentedApi" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7uQti-WQdE_C3Q" />
+                <option name="line" value="25" />
+                <option name="message" value="publicMethodCommentRequirement Required" />
+                <option name="ruleKey" value="pmd:CommentRequired" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7rQti-WQdE_C3H" />
+                <option name="line" value="25" />
+                <option name="message" value="Document this public method." />
+                <option name="ruleKey" value="squid:UndocumentedApi" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS70Qti-WQdE_C3i" />
+                <option name="line" value="52" />
+                <option name="message" value="Potential violation of Law of Demeter (object not created locally)" />
+                <option name="ruleKey" value="pmd:LawOfDemeter" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7vQti-WQdE_C3U" />
+                <option name="line" value="37" />
+                <option name="message" value="publicMethodCommentRequirement Required" />
+                <option name="ruleKey" value="pmd:CommentRequired" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7rQti-WQdE_C3I" />
+                <option name="line" value="37" />
+                <option name="message" value="Document this public method." />
+                <option name="ruleKey" value="squid:UndocumentedApi" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS71Qti-WQdE_C3k" />
+                <option name="line" value="6" />
+                <option name="message" value="Wrong order for 'java.text.SimpleDateFormat' import." />
+                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7wQti-WQdE_C3V" />
+                <option name="line" value="38" />
+                <option name="message" value="Local variable 'c' could be declared final" />
+                <option name="ruleKey" value="pmd:LocalVariableCouldBeFinal" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7pQti-WQdE_C3B" />
+                <option name="line" value="38" />
+                <option name="message" value="Make this line start at column 5." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7oQti-WQdE_C3A" />
+                <option name="line" value="32" />
+                <option name="message" value="Make this line start at column 7." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7vQti-WQdE_C3T" />
+                <option name="line" value="30" />
+                <option name="message" value="Potential violation of Law of Demeter (object not created locally)" />
+                <option name="ruleKey" value="pmd:LawOfDemeter" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7vQti-WQdE_C3S" />
+                <option name="line" value="29" />
+                <option name="message" value="Local variable 'date' could be declared final" />
+                <option name="ruleKey" value="pmd:LocalVariableCouldBeFinal" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7sQti-WQdE_C3K" />
+                <option name="line" value="31" />
+                <option name="message" value="Catch a list of specific exception subtypes instead." />
+                <option name="ruleKey" value="squid:S2221" />
+                <option name="severity" value="MAJOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS72Qti-WQdE_C3m" />
+                <option name="line" value="31" />
+                <option name="message" value="Catching 'Exception' is not allowed." />
+                <option name="ruleKey" value="checkstyle:com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck" />
+                <option name="severity" value="MAJOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7mQti-WQdE_C27" />
+                <option name="line" value="31" />
+                <option name="message" value="Move this &quot;catch&quot; keyword to a new dedicated line." />
+                <option name="ruleKey" value="squid:RightCurlyBraceDifferentLineAsNextBlockCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS70Qti-WQdE_C3g" />
+                <option name="line" value="50" />
+                <option name="message" value="Potential violation of Law of Demeter (object not created locally)" />
+                <option name="ruleKey" value="pmd:LawOfDemeter" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS70Qti-WQdE_C3h" />
+                <option name="line" value="51" />
+                <option name="message" value="Potential violation of Law of Demeter (object not created locally)" />
+                <option name="ruleKey" value="pmd:LawOfDemeter" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7qQti-WQdE_C3G" />
+                <option name="line" value="19" />
+                <option name="message" value="Document this public method." />
+                <option name="ruleKey" value="squid:UndocumentedApi" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7tQti-WQdE_C3O" />
+                <option name="line" value="19" />
+                <option name="message" value="publicMethodCommentRequirement Required" />
+                <option name="ruleKey" value="pmd:CommentRequired" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7wQti-WQdE_C3W" />
+                <option name="line" value="39" />
+                <option name="message" value="Potential violation of Law of Demeter (object not created locally)" />
+                <option name="ruleKey" value="pmd:LawOfDemeter" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7sQti-WQdE_C3L" />
+                <option name="message" value="Replace all tab characters in this file by sequences of white-spaces." />
+                <option name="ruleKey" value="squid:S00105" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7wQti-WQdE_C3X" />
+                <option name="line" value="40" />
+                <option name="message" value="Potential violation of Law of Demeter (object not created locally)" />
+                <option name="ruleKey" value="pmd:LawOfDemeter" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7mQti-WQdE_C26" />
+                <option name="message" value="16 more comment lines need to be written to reach the minimum threshold of 25.0% comment density." />
+                <option name="ruleKey" value="common-java:InsufficientCommentDensity" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7yQti-WQdE_C3c" />
+                <option name="line" value="46" />
+                <option name="message" value="Potential violation of Law of Demeter (object not created locally)" />
+                <option name="ruleKey" value="pmd:LawOfDemeter" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7uQti-WQdE_C3R" />
+                <option name="line" value="27" />
+                <option name="message" value="Local variable 'format' could be declared final" />
+                <option name="ruleKey" value="pmd:LocalVariableCouldBeFinal" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7oQti-WQdE_C2_" />
+                <option name="line" value="27" />
+                <option name="message" value="Make this line start at column 7." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7yQti-WQdE_C3b" />
+                <option name="line" value="45" />
+                <option name="message" value="Local variable 'c' could be declared final" />
+                <option name="ruleKey" value="pmd:LocalVariableCouldBeFinal" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7pQti-WQdE_C3C" />
+                <option name="line" value="45" />
+                <option name="message" value="Make this line start at column 5." />
+                <option name="ruleKey" value="squid:IndentationCheck" />
+                <option name="severity" value="MINOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="AWAlSS7zQti-WQdE_C3f" />
+                <option name="line" value="49" />
+                <option name="message" value="Potential violation of Law of Demeter (object not created locally)" />
+                <option name="ruleKey" value="pmd:LawOfDemeter" />
+                <option name="severity" value="INFO" />
+              </SonarIssue>
+            </set>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/main/webapp/apps/$factories/$elearningService.js">
@@ -1017,6 +1344,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/test/java/com/nd/esp/statistics/training/elearning/service/EnrollServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../z-online/esp-statistics-training2/src/test/java/com/nd/esp/statistics/training/px/controller/PxxmKcControllerTest.java">
           <value>
             <set />
           </value>
