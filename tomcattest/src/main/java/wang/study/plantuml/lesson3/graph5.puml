@@ -1,0 +1,41 @@
+@startuml
+top to bottom direction
+partition Commuter {
+   (*)-down-> "start session"
+        --[hidden]>"Provide Trip Info"
+        --[hidden]>"Provide Payment Info"
+        --[hidden]>"Get Ticket"
+        --[hidden]>"getChange"
+}
+partition Bank {
+    (*)--[hidden]> "Authorize Card Payment"
+}
+partition "Tiket vending machine" {
+        "start session"-right->"Request Trip Info"
+        -->"Provide Trip Info"
+        -->"Process Trip Info"
+        -->"Request Payment"
+        -->"Provide Payment Info"
+        -->"Process Payment"
+        if "select paytype" then
+          --> ["pay weith card"] "Authorize Card Payment"
+          ->"Dispense Ticket"
+         else
+          --> ["pay with cash"] "Dispense Ticket"
+        endif
+      -->Ticket
+      -->"Get Ticket"
+      if paid with cash &with change then
+          -->["ok"] dispense change
+          -->change
+          -->getChange
+          -->show thank you
+      else
+           --> show thank you
+      endif
+      -->(*)
+}
+
+
+
+@enduml

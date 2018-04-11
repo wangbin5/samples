@@ -1,0 +1,33 @@
+@startuml
+top to bottom direction
+:Registered Customer: as RC
+:New Customer: as NC
+:Web Customer: as WC
+WC <|-- RC
+WC <|-- NC
+
+:Authentication: as Auth  <<Service>>
+:Identity Provider: as IP
+:Credit Payment Service:  as CPS
+:PayPal: as PP
+
+rectangle OnlineShopping <<Subsystem>>{
+    top to bottom direction
+    RC --> (View Items)
+    RC --> (Make Purchase)
+    NC --> (View Items)
+    NC --> (Client Register)
+    Auth--> (View Items)
+    Auth --> (Checkout)
+    Auth --> (Client Register)
+    IP--> (View Items)
+    IP--> (Checkout)
+    CPS--> (Checkout)
+    PP--> (Checkout)
+    (Make Purchase).>(View Items) :include
+    (Make Purchase)..>(Checkout) :include
+}
+
+
+
+@enduml

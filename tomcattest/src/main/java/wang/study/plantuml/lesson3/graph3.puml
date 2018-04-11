@@ -1,0 +1,26 @@
+@startuml
+left to right direction
+(Checkout) --> (Customer Authentication) :《include》
+(Checkout) --> (View/Update Shoping Cart) :《include》
+(Checkout) --> (Calculate Taxes and Shipping) :《include》
+(Checkout) --> (Payment) :《include》
+
+(User Sign in) --|> (Customer Authentication)
+(Remember Me) --|> (Customer Authentication)
+(Single Sign-On) --|> (Customer Authentication)
+:Identifier Provider: --> (User Sign in)
+:Identifier Provider: --> (Remember Me)
+:Identifier Provider: --> (Single Sign-On)
+:Authentication: as Auth  <<Service>>
+ Auth--> (Single Sign-On)
+
+(View/Update Shoping Cart) --> (Calculate Total) :《include》
+
+(Payment By Credit) --|> (Payment)
+(Payment By Paypal) --|> (Payment)
+
+:CreditPayment Service: --> (Payment By Credit)
+:Paypal: --> (Payment By Paypal)
+
+
+@enduml

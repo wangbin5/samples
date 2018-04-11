@@ -1,0 +1,23 @@
+@startuml
+actor "Web Customer" as Wc
+participant ":Online Bookshop" as L
+
+
+loop 1000 times
+   Wc -> L:search inventory
+   Wc <-- L:search results
+   opt
+        Wc -> L:view book description
+   end
+   opt
+        Wc -> L:add to shoping cart
+   end
+end
+
+opt
+    ref over Wc,L
+        Checkout
+    end
+end
+
+@enduml
